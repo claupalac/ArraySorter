@@ -6,7 +6,7 @@ namespace ArraySorter
 {
     public class QuickSorter : ISorter
     {
-        public void Sort(List<string> list, IComparator comparator)
+        public void Sort(ref List<string> list, IComparator comparator)
         {
             QuickSort(list,0,list.Count-1,comparator);
         }

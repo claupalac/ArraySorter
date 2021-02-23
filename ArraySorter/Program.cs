@@ -7,23 +7,22 @@ namespace ArraySorter
     {
         public static void Main(string[] args)
         {
-            ISorter sorter = new QuickSorter();
+            ISorter sorter = new MergeSorter();
 
             List<string> list = new List<string>()
             {
-                "f", "h", "c", "w", "b", "v", "e", "a"
+                "f", "h", "c", "g", "b", "d", "e", "a"
             };
             
             Console.WriteLine("\nArray Before Sort:");
             PrintList(list);
             
-            Console.WriteLine("\nArray After Sort: Ascendent");
-            sorter.Sort(list, new ComparatorAscendent());
+            Console.WriteLine("\nArray After Sort: Ascendant");
+            sorter.Sort(ref list, new ComparatorAscendant());
             PrintList(list);
             
             Console.WriteLine("\nArray After Sort: Descendent");
-            sorter = new BubbleSort();
-            sorter.Sort(list, new ComparatorDescendant());
+            sorter.Sort(ref list, new ComparatorDescendant());
             PrintList(list);
         }
 

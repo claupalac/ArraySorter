@@ -12,8 +12,26 @@ namespace ArraySorterTests
         {
             sorter = new MergeSorter();
         }
+
         [Fact]
-        void Sort_WithAlphabetArrayOfFiveElements_ShouldSortAcendent()
+        void Sort_WithFiveDifferentWordsInArray_ShouldSortDescendant()
+        {
+            List<string> aList = new List<string>()
+            {
+                "Claudio", "Alejandro", "Andres", "Palacios", "Vanessa"
+            };
+            List<string> expected = new List<string>()
+            {
+                "Alejandro", "Andres", "Claudio", "Palacios", "Vanessa"
+            };
+            
+            sorter.Sort(ref aList,new FakeComparator());
+            
+            Assert.Equal(expected,aList);
+        }
+        
+        [Fact]
+        void Sort_WithAlphabetArrayOfFiveElements_ShouldSortAscendant()
         {
             List<string> aList = new List<string>()
             {
@@ -24,7 +42,7 @@ namespace ArraySorterTests
                 "a", "b", "c", "d", "e"
             };
             
-            sorter.Sort(aList,new FakeComparator());
+            sorter.Sort(ref aList,new FakeComparator());
             
             Assert.Equal(expected,aList);
             

@@ -40,7 +40,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BubbleSort.cs" />
-        <Compile Include="ComparatorAscendent.cs" />
+        <Compile Include="ComparatorAscendant.cs" />
         <Compile Include="ComparatorDescendant.cs" />
         <Compile Include="IComparator.cs" />
         <Compile Include="ISorter.cs" />

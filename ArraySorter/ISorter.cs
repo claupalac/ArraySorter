@@ -4,6 +4,6 @@ namespace ArraySorter
 {
     public interface ISorter
     {
-        void Sort(List<string> list, IComparator comparator);
+        void Sort(ref List<string> list, IComparator comparator);
     }
 }

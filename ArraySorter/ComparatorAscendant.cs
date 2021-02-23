@@ -1,6 +1,6 @@
 namespace ArraySorter
 {
-    public class ComparatorAscendent : IComparator
+    public class ComparatorAscendant : IComparator
     {
         public int Compare(string string1, string string2)
         {

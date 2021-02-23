@@ -4,11 +4,7 @@ namespace ArraySorter
 {
     public class BubbleSort : ISorter
     {
-        private void SwapValuesOfIndex(int index1, int index2)
-        {
-            
-        }
-        public void Sort(List<string> list, IComparator comparator)
+        public void Sort(ref List<string> list, IComparator comparator)
         {
             int listLenght = list.Count;
             for (int i = 0; i < listLenght - 1; i++)
