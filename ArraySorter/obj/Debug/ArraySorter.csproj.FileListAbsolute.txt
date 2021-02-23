@@ -1,0 +1,6 @@
+/Users/claudio/Documents/Rider Projects/ArraySorterSolution/ArraySorter/bin/Debug/ArraySorter.exe
+/Users/claudio/Documents/Rider Projects/ArraySorterSolution/ArraySorter/bin/Debug/ArraySorter.pdb
+/Users/claudio/Documents/Rider Projects/ArraySorterSolution/ArraySorter/obj/Debug/ArraySorter.csprojAssemblyReference.cache
+/Users/claudio/Documents/Rider Projects/ArraySorterSolution/ArraySorter/obj/Debug/ArraySorter.csproj.CoreCompileInputs.cache
+/Users/claudio/Documents/Rider Projects/ArraySorterSolution/ArraySorter/obj/Debug/ArraySorter.exe
+/Users/claudio/Documents/Rider Projects/ArraySorterSolution/ArraySorter/obj/Debug/ArraySorter.pdb

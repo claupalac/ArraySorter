@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraySorter", "ArraySorter\ArraySorter.csproj", "{43E349B9-F801-442E-BA3A-0751818E24CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraySorterTests", "ArraySorterTests\ArraySorterTests.csproj", "{30D3D4F0-ECF7-4464-9572-95A3DC08D485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E349B9-F801-442E-BA3A-0751818E24CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E349B9-F801-442E-BA3A-0751818E24CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E349B9-F801-442E-BA3A-0751818E24CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E349B9-F801-442E-BA3A-0751818E24CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D3D4F0-ECF7-4464-9572-95A3DC08D485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D3D4F0-ECF7-4464-9572-95A3DC08D485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D3D4F0-ECF7-4464-9572-95A3DC08D485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D3D4F0-ECF7-4464-9572-95A3DC08D485}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
