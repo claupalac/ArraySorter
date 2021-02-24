@@ -7,18 +7,35 @@ namespace ArraySorterTests
     public class SearchTest
     {
         [Fact]
-        void Search_WithBinarySearch_ShouldReturnSameValue()
+        void Search_WithListContainingTheSearchedValue_ShouldReturnSearchedValue()
         {
             ISearcher searcher = new BinarySearcher();
-            var expected = "Claudio";
+            var searchedValue = "Claudio";
             List<string> aList = new List<string>()
             {
                 "Bustillos", "Claudio", "Iniesta", "Palacios", "Vanessa"
             };
 
-            var actual = searcher.GetItemSearched(aList, expected);
+            var actual = searcher.GetItemSearched(aList, searchedValue);
             
-            Assert.Equal(actual,expected);
+            
+            Assert.Equal(actual,searchedValue);
+        }
+        
+        [Fact]
+        void Search_WithListNotContainingTheSearchedValue_ShouldReturnNull()
+        {
+            ISearcher searcher = new BinarySearcher();
+            var searchedValue = "Claudio2";
+            List<string> aList = new List<string>()
+            {
+                "Bustillos", "Claudio", "Iniesta", "Palacios", "Vanessa"
+            };
+
+            var actual = searcher.GetItemSearched(aList, searchedValue);
+            
+            
+            Assert.Null(actual);
         }
         
         [Fact]
