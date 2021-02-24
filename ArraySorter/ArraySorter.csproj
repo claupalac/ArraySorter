@@ -42,6 +42,7 @@
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Search\BinarySearcher.cs" />
+        <Compile Include="Search\JumpSearch.cs" />
         <Compile Include="Search\ISearcher.cs" />
         <Compile Include="Sort\BubbleSort.cs" />
         <Compile Include="Sort\ComparatorAscendant.cs" />

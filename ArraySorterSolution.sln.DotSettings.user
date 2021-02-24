@@ -4,5 +4,6 @@
     &lt;TestId&gt;xUnit::30D3D4F0-ECF7-4464-9572-95A3DC08D485::.NETFramework,Version=v4.8::ArraySorterTests.SorterTest.Sort_WithFiveDifferentWordsInArray_ShouldSortDescendant&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::30D3D4F0-ECF7-4464-9572-95A3DC08D485::.NETFramework,Version=v4.8::ArraySorterTests.SorterTest.Sort_WithAlphabetArrayOfFiveElements_ShouldSortAscendant&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::30D3D4F0-ECF7-4464-9572-95A3DC08D485::.NETFramework,Version=v4.8::ArraySorterTests.SearchTest.Search_WithBinarySearch_ShouldReturnSameValue&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::30D3D4F0-ECF7-4464-9572-95A3DC08D485::.NETFramework,Version=v4.8::ArraySorterTests.SearchTest.Search_WithJumpSearch_ShouldReturnSameValue&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
