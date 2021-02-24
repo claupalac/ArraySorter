@@ -13,37 +13,25 @@ namespace ArraySorter.Search
         
         private string Search(List<string> list, int startingIndex, int endingIndex, string wanted)
         { 
-            int n = list.Count; 
-  
-            // Finding block size to be jumped 
-            int step = (int)Math.Floor(Math.Sqrt(n)); 
-  
-            // Finding the block where element is 
-            // present (if it is present) 
-            int prev = 0; 
+            int n = list.Count;
+            int step = (int)Math.Floor(Math.Sqrt(n));
+            int before = 0; 
             while (list[Math.Min(step, n)-1].CompareTo(wanted) < 0) 
             { 
-                prev = step; 
+                before = step; 
                 step += (int)Math.Floor(Math.Sqrt(n)); 
-                if (prev >= n) 
+                if (before >= n) 
                     return null; 
-            } 
-  
-            // Doing a linear search for x in block 
-            // beginning with prev. 
-            while (list[prev].CompareTo(wanted) < 0) 
+            }
+            while (list[before].CompareTo(wanted) < 0) 
             { 
-                prev++; 
-  
-                // If we reached next block or end of 
-                // array, element is not present. 
-                if (prev == Math.Min(step, n)) 
+                before++;
+                if (before == Math.Min(step, n)) 
                     return null; 
             } 
-  
-            // If element is found 
-            if (list[prev] == wanted) 
-                return list[prev]; 
+            
+            if (list[before] == wanted) 
+                return list[before]; 
   
             return null; 
         } 
